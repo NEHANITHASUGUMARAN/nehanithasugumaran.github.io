@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehanitha's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!-------------Home---------------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="logo1.png" class="logo" alt="Logo"></a>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#education1">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills1">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#awards">Awards</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="intro-section">
+                <div class="intro-content">
+                    <h1>Hi, I'm <span class="highlight">Nehanitha Sugumaran</span></h1>
+                    <h3>Electronics and Communication Engineer</h3>
+                    <p class="intro-para">
+                    Passionate MERN stack developer crafting intuitive user interfaces and robust backend systems to solve real-world challenges through full-stack innovation.
+                    </p>
+                    <div class="intro-buttons">
+                    
+                    <a
+                        href="resume.pdf" class="btn btn-primary"
+                        download="Nehanitha_Sugumaran_CV.pdf"
+                        className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+                    >
+                    Download My CV
+                    </a>
+
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+
+                    <a href="#about" class="btn btn-outline">More About Me</a>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="intoimage.png" alt="Intro Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------------about section---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" alt="Profile Image">
+                </div>
+
+               <div class="about-container">
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="para1">
+                            I'm an Electronics and Communication Engineering student passionate about MERN stack development, UI/UX design, IoT, and exploring AI/ML. I love building real-world tech solutions that blend smart hardware with intuitive software.
+                            My projects include a smart blind cane with obstacle and GPS features, and an elephant detection SOS web app for real-time alerts. I’m proud to have won 2nd prize at the HAC-kathon Forest hackathon for an AI-powered drone system to reduce human-elephant conflict. I'm always eager to innovate and learn at the intersection of technology and design.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Interests</p>
+                            <p class="tab-links" onclick="opentab('techstack')"> Tech Stack </p>
+                            <p class="tab-links" onclick="opentab('education')" >Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web interfaces</li>
+                                <li><span>Web Development</span><br>MERN stack Development</li>
+                                <li><span>AI</span><br>Exploring smart solutions with AI</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="techstack">
+                            <ul>
+                                <li><span>C</span><br>Structured programming & problem-solving</li>
+                                <li><span>C++</span><br>OOPs concepts & STL mastery</li>
+                                <li><span>Python</span><br>AI, automation & scripting</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.E. Electronics and Communication Engineering</span><br>St. Joseph's Institute of Technology, 2027</li>
+                                <li><span>Higher Secondary Education</span><br>Maharishi Vidya Mandir</li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!---Education--->
+    <div class="education-section" id="education1">
+        <h2 class="edu-title">Education</h2>
+        <p class="edu-subtitle">My academic journey and qualifications.</p>
+
+        <div class="edu-card">
+            <div class="edu-header">
+                <div>
+                    <h3 class="hover-text">B.E. Electronics and Communication Engineering</h3>
+                    <p>St. Joseph's Institute of Technology, Chennai</p>
+                </div>
+                <span class="edu-date">2023 - Present</span>
+            </div>
+            <div class="edu-detail">
+                <p>CGPA</p>
+                <strong>9.51/10</strong>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-header">
+                <div>
+                    <h3 class="hover-text">Higher Secondary Education</h3>
+                    <p>Maharishi Vidya Mandir School, Chennai</p>
+                </div>
+                <span class="edu-date">2021 – 2023</span>
+            </div>
+            <div class="edu-detail">
+                <p>Percentage</p>
+                <strong>90%</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-------------Experience section ---------------->
+
+    <div class="experience-section" id="experience">
+        <h2 class="exp-title">Experience</h2>
+        <p class="exp-subtitle">My professional experience and internships.</p>
+
+        <div class="exp-card">
+            <div class="exp-header">
+            <div>
+                <h3 class="hover-text">BSNL – Internship on Telecommunication</h3>
+                <p>Public Sector Telecom Company</p>
+            </div>
+            <span class="exp-date">July 2024</span>
+            </div>
+            <p class="exp-description">Explored telecom networks, switching, and broadband infrastructure during on-site training.</p>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+            <div>
+                <h3 class="hover-text">BIG-SI-BUCKS INNOVATION PRIVATE LIMITED</h3>
+                <p>Cloud Computing & IT Project Management</p>
+            </div>
+            <span class="exp-date">December 2024</span>
+            </div>
+            <p class="exp-description">Worked on project documentation, system architecture, and cloud deployment using project management tools.</p>
+        </div>
+
+        <div class="exp-card">
+            <div class="exp-header">
+            <div>
+                <h3 class="hover-text">Indian Servers Software Company</h3>
+                <p>AI and Deep Learning Internship</p>
+            </div>
+            <span class="exp-date">June 2025</span>
+            </div>
+            <ul class="exp-list">
+            <li>Built models for object detection using YOLO</li>
+            <li>Explored image classification using CNNs</li>
+            <li>Applied deep learning in real-time AI projects</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-------------Skills section ---------------->
+   
+    <div id="skills1" class="skills-section">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-container">
+        
+            <div class="skill">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar"><div class="skill-level python">90%</div></div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">C</span>
+                <div class="skill-bar"><div class="skill-level c">80%</div></div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">C++</span>
+                <div class="skill-bar"><div class="skill-level cpp">90%</div></div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar"><div class="skill-level html">85%</div></div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar"><div class="skill-level css">85%</div></div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-level js">70%</div></div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">React</span>
+                <div class="skill-bar"><div class="skill-level react">50%</div></div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar"><div class="skill-level sql">60%</div></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------------Project section ---------------->
+
+    <div class="projects-section" id="projects">
+        <h2 class="project-title">Projects</h2>
+        <p class="project-subtitle">Showcasing my hardware and software innovations.</p>
+
+        <!-- Hardware Projects -->
+        <h3 class="project-category">Hardware Projects</h3>
+        <div class="project-cards">
+            <!-- Autonomous Rover -->
+            <div class="project-card">
+            <!-- Add rover image here -->
+            <img src="rover.png" alt="Autonomous Rover Project" class="project-img">
+            <div class="project-content">
+                <h4 class="project-name">Autonomous Rover</h4>
+                <p>Developed an autonomous rover with real-time GPS tracking, obstacle, and pothole detection using advanced sensors. Enabled autonomous navigation across diverse terrains.</p>
+            </div>
+            </div>
+
+            <!-- Smart Blind Cane -->
+            <div class="project-card">
+            <!-- Add cane image here -->
+            <img src="cane.png" alt="Smart Blind Cane Project" class="project-img">
+            <div class="project-content">
+                <h4 class="project-name">Smart Blind Cane</h4>
+                <p>Engineered a smart cane with ultrasonic and IR sensors to detect obstacles and slippery surfaces. Integrated vibration alerts, audio feedback, and GPS for enhanced mobility.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Software Projects -->
+        <h3 class="project-category">Software Projects</h3>
+        <div class="project-cards">
+            <!-- Forest Monitoring -->
+            <div class="project-card">
+            <!-- Add forest monitoring image here -->
+            <img src="forest.png" alt="Forest Monitoring System" class="project-img">
+            <div class="project-content">
+                <h4 class="project-name">Forest Monitoring System</h4>
+                <p>Designed a geofencing-based web app for real-time forest surveillance, automated patrolling, and wildlife protection to prevent human-animal conflict.</p>
+            </div>
+            </div>
+
+            <!-- E-commerce Website -->
+            <div class="project-card">
+            <!-- Add ecommerce image here -->
+            <img src="ecommerce.png" alt="E-commerce Website" class="project-img">
+            <div class="project-content">
+                <h4 class="project-name">E-commerce Website</h4>
+                <p>Built a responsive website for clothing and cosmetics shopping with modern UI and product filter features.</p>
+            </div>
+            </div>
+
+            <!-- Healthcare Assistant -->
+            <div class="project-card">
+            <!-- Add healthcare image here -->
+            <img src="healthcare.png" alt="Healthcare Assistant Website" class="project-img">
+            <div class="project-content">
+                <h4 class="project-name">Healthcare Assistant</h4>
+                <p>Created a comprehensive site for skincare, mental health, diet, and exercise with chatbot support for user interaction.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------Awards section ---------------->
+
+    <div class="achievements-section" id="awards">
+        <h2 class="achievements-title">Achievements</h2>
+
+
+        <!-- Achievement 1-->
+        <div class="achievement-card">
+            <div class="achievement-header">
+            <div class="achievement-icon">🎓</div>
+            <div>
+                <h3 class="achievement-name">Topper Award</h3>
+                <span class="achievement-date">2023-27</span>
+            </div>
+            </div>
+            <div class="achievement-prize">🏅 Cash Prize – ₹10,000</div>
+            <p class="achievement-description">
+            Awarded as the Branch Topper in Electronics and Communication Engineering for outstanding academic performance in 2024.
+            </p>
+            <div class="achievement-tags">
+            <span>Academic Excellence</span>
+            <span>ECE</span>
+            <span>Topper Award</span>
+            </div>
+            <!-- Add Branch Topper certificate image here -->
+            <img src="certificate2.png" alt="Topper Certificate" class="certificate-img">
+        </div>
+
+        <!-- Achievement 2 -->
+        <div class="achievement-card">
+            <div class="achievement-header">
+            <div class="achievement-icon">🏆</div>
+            <div>
+                <h3 class="achievement-name">HAC-kathon Forest Hackathon</h3>
+                <span class="achievement-date">March 2025</span>
+            </div>
+            </div>
+            <div class="achievement-prize">🥈 2nd Prize – ₹15,000</div>
+            <p class="achievement-description">
+            Won 2nd prize (₹15,000) at the Forest hackathon held in Coimbatore on March 14–15.<br>
+            Developed a project on solving elephant-human conflict in forest and settlement areas using AI-powered swarm drones for monitoring, detection, and safe redirection.
+            </p>
+            <div class="achievement-tags">
+            <span>AI</span>
+            <span>Swarm Drones</span>
+            <span>Computer Vision</span>
+            <span>Wildlife Conservation</span>
+            </div>
+            <!-- Add HAC-kathon certificate image here -->
+            <img src="certificate1.png" alt="Hackathon Certificate" class="certificate-img">
+        </div>
+
+        
+    </div>
+
+    <!-------------Certifications section ---------------->
+
+    <section class="certification-section" id="certifications">
+        <h2 class="cert-title">Certifications</h2>
+        <p class="cert-subtitle">Courses and achievements that enhanced my skills.</p>
+
+        <div class="cert-grid">
+            <div class="cert-card">
+            <div class="cert-icon">📘</div>
+            <h3>Meta Frontend Developer</h3>
+            <p><strong>Platform:</strong> Coursera</p>
+            <p class="cert-note">Professional Certificate</p>
+            </div>
+
+            <div class="cert-card">
+            <div class="cert-icon">🧰</div>
+            <h3>Springboard Full Stack</h3>
+            <p><strong>Platform:</strong> Infosys Springboard</p>
+            <p class="cert-note">HTML, CSS, Bootstrap, JS, Networking</p>
+            </div>
+
+            <div class="cert-card">
+            <div class="cert-icon">📊</div>
+            <h3>Intro to Data Science</h3>
+            <p><strong>Platform:</strong> Cisco Networking Academy</p>
+            </div>
+
+            <div class="cert-card">
+            <div class="cert-icon">🐍</div>
+            <h3>NPTEL Certifications</h3>
+            <p><strong>Courses:</strong> Data Science, Python, IoT</p>
+            </div>
+
+            <div class="cert-card">
+            <div class="cert-icon">🌐</div>
+            <h3>Networking Basics</h3>
+            <p><strong>Platform:</strong> CISCO</p>
+            </div>
+        </div>
+
+        <!-- You can add certification images here -->
+        <!-- Example: <img src="certificates/meta-frontend.png" alt="Meta Frontend Certificate"> -->
+    </section>
+
+    <!-------------Contact section ---------------->
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+            <h2>Contact Me</h2>
+            <p><i class="fa fa-paper-plane"></i> <a href="https://mail.google.com/mail/?view=cm&to=nehanithasugumaran@gmail.com" target="_blank" style="color: inherit; text-decoration: none;">
+                nehanithasugumaran@gmail.com </a>
+            </p>
+            <p><i class="fa fa-phone"></i> <a href="tel:+919884780914" style="color: inherit; text-decoration: none;">+91 9884780914</a></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nehanitha"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea rows="6" name="Message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("show");
+        }
+
+        // Auto-close nav on link click
+        document.querySelectorAll('#navLinks ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('show');
+            });
+        });
+
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxn7wNsN8f37lXEntabuJcF78e5j2sNoWGLfdp1oZnCSrGf-RJlAA5GBmqgZK4hN1Fw/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+</body>
+</html>
